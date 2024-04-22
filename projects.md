@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Portfolio"
-categories: portfolio
+title:  "Projects"
+categories: projects
 ---
 
 ## [Sirius](https://github.com/Epsylene/Sirius)
