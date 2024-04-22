@@ -65,10 +65,11 @@ using a function pointer table to get each opcode method, and
 displaying the result on a (scaled) 64x32 screen.
 
 ## [AxolotlOS](https://github.com/Epsylene/AxolotlOS)
+![AxolotlOS](/assets/images/axolotlos.png)
 
 A (very early-stage) 64-bit OS, for fun.
 
-Comprised for now almost exclusively of a bootloader, which:
+Comprised for now almost exclusively of a bootloader written in assembly, which:
 - Sets up the MBR
 - Sets up a basic flat-model GDT
 - Elevates from real mode to protected mode
