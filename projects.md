@@ -69,7 +69,7 @@ displaying the result on a (scaled) 64x32 screen.
 
 A (very early-stage) 64-bit OS, for fun.
 
-Comprised for now almost exclusively of a bootloader written in assembly, which:
+Comprised for now almost exclusively of a bootloader written in x86-64 assembly, which:
 - Sets up the MBR
 - Sets up a basic flat-model GDT
 - Elevates from real mode to protected mode
