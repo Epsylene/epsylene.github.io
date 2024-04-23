@@ -20,6 +20,9 @@ $text-color:            #ccdbd5;
 $background-color:      #110f13;
 $block-color:           #2a3130;
 $link-color:            #85c0f0;
+$link-color-post:       #fdb42f;
+$link-hover-color-bg:   #fdb42f;
+$link-hover-color-fg:   #2a3130; //#f9f9f9;
 $site-title-color:      #ced1d4;
 $post-title-color:      #ced1d4;    
 $heading-color:         #ced1d4;
@@ -158,14 +161,18 @@ $on-laptop:        900px;
  /**
   * Links
   */
- a {
-     color: $link-color;
-     text-decoration: none;
- 
-     &:hover {
-         color: lighten($link-color, 10%);
-     }
- }
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        color: lighten($link-color, 10%);
+    }
+
+    &:visited {
+        color: $link-color;
+    }
+}
  
  
  
@@ -492,6 +499,16 @@ article {
 
 .post-content {
     margin-bottom: $spacing-unit;
+
+    a {
+        color: $link-color-post;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $link-hover-color-bg;
+            color: $link-hover-color-fg;
+        }
+    }
 
     h2 {
         font-size: 32px;
