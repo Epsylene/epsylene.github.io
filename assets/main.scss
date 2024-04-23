@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @import "minima";
 @charset "utf-8";
@@ -19,10 +18,10 @@ $spacing-unit:     30px;
 $text-color:            #ccdbd5;
 $background-color:      #110f13;
 $block-color:           #2a3130;
-$link-color:            #85c0f0;
-$link-color-post:       #fdb42f;
-$link-hover-color-bg:   #fdb42f;
-$link-hover-color-fg:   #2a3130; //#f9f9f9;
+$link-color:            #6eaee3; // #85c0f0
+$link-color-content:    #eb5895; // #fdb42f
+$link-hover-color-bg:   #eb3f86; // #fdb42f #eb3f86
+$link-hover-color-fg:   #f9f9f9; // #f9f9f9 #2a3130
 $site-title-color:      #ced1d4;
 $post-title-color:      #ced1d4;    
 $heading-color:         #ced1d4;
@@ -501,7 +500,7 @@ article {
     margin-bottom: $spacing-unit;
 
     a {
-        color: $link-color-post;
+        color: $link-color-content;
         text-decoration: none;
 
         &:hover {
