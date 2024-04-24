@@ -112,23 +112,25 @@ $on-laptop:        900px;
  /**
   * Images
   */
- img {
-     max-width: 100%;
-     vertical-align: middle;
-     border: 1px solid $grey-color-light;
-     border-radius: 1px;
- }
- 
- /**
-  * Figures
-  */
- figure > img {
-     display: block;
- }
- 
- figcaption {
-     font-size: $small-font-size;
- }
+img {
+  max-width: 100%;
+  border: 1px solid $grey-color-light;
+  border-radius: 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**
+* Figures
+*/
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
  
  
  
