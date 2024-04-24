@@ -17,8 +17,10 @@ $spacing-unit:     30px;
 
 $text-color:            #ccdbd5;
 $background-color:      #110f13;
+$selection-bg-color:    #e5a225; // #ebdc57 ed8e4e a6761c
+$selection-fg-color:    #2a3130;
 $block-color:           #2a3130;
-$link-color:            #6eaee3; // #85c0f0
+$link-color:            #6eaee3; // #85c0f0 57d2eb 6eaee3
 $link-color-content:    #eb5895; // #fdb42f
 $link-hover-color-bg:   #eb3f86; // #fdb42f #eb3f86
 $link-hover-color-fg:   #f9f9f9; // #f9f9f9 #2a3130
@@ -39,31 +41,30 @@ $on-palm:          600px;
 $on-laptop:        900px;
 
 .warning {
-    color: #f9f9f9;
-    background-color: #796418;
-    border-left: 6px solid #ffeb3b;
-    padding-left: 6px;
+  color: #f9f9f9;
+  background-color: #796418;
+  border-left: 6px solid #ffeb3b;
+  padding-left: 6px;
 }
 
 .info {
-    color: #f9f9f9;
-    background-color: #1d7162;
-    border-left: 6px solid #3bdbff;
-    padding-left: 6px;
+  color: #f9f9f9;
+  background-color: #1d7162;
+  border-left: 6px solid #3bdbff;
+  padding-left: 6px;
 }
 
-
 .note {
-    color: #f9f9f9;
-    background-color: #273344;
-    border-left: 6px solid #607f86;
-    padding-left: 6px;
+  color: #f9f9f9;
+  background-color: #273344;
+  border-left: 6px solid #607f86;
+  padding-left: 6px;
 }
 
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+      @content;
+  }
 }
 
 /**
@@ -89,6 +90,11 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
+}
+
+::selection {
+  background-color: $selection-bg-color;
+  color: $selection-fg-color;
 }
 
 /**
