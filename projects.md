@@ -80,7 +80,7 @@ Comprised for now almost exclusively of a bootloader written in x86-64 assembly,
 - Calls the main() function in the kernel
 
 ## [trout](https://github.com/Epsylene/trout)
-![trout](/assets/images/trout.png)
+<!-- ![trout](/assets/images/trout.png) -->
 
 Interpreter for a simple dynamically-typed programming
 language, from the book [*Crafting
