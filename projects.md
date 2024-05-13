@@ -54,6 +54,7 @@ Implementation of the [Rust Vulkan tutorial](https://kylemayes.github.io/vulkana
 - The Vulkan Triangle
 - Samplers and textures
 - A depth buffer
+- OBJ model loading
 
 The code is being heavily commented as I go through the tutorial, so it can be useful as an implementation reference.
 
