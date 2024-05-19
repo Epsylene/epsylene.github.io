@@ -55,6 +55,7 @@ Implementation of the [Rust Vulkan tutorial](https://kylemayes.github.io/vulkana
 - Samplers and textures
 - A depth buffer
 - OBJ model loading
+- Mipmaps
 
 The code is being heavily commented as I go through the tutorial, so it can be useful as an implementation reference.
 
@@ -91,3 +92,6 @@ Nystrom, implemented in Rust. The program consists of three main parts:
 1. A scanner that reads the source code, either from a file or a REPL, and produces a sequence of tokens.
 2. A parser that produces an abstract sintax tree from the sequence of tokens.
 3. An interpreter that traverses the AST and executes the code.
+
+The language is expression-based, with dynamic typing, lexical
+scoping, local functions, closures and some built-in functions.
