@@ -44,7 +44,7 @@ Features include:
 
 Implementation of the [Rust Vulkan tutorial](https://kylemayes.github.io/vulkanalia/introduction.html), to learn Vulkan. In time, I hope to expand this to some sort of engine-playground for experimenting with graphics programming. For now, there is:
 
-- A Vulkan instance provided by the vulkanalia crate
+- A Vulkan instance provided by the `vulkanalia` crate
 - Error checking with validation layers
 - Physical and logical devices selection
 - A window surface and swapchain, with image views and framebuffers as needed
@@ -56,8 +56,10 @@ Implementation of the [Rust Vulkan tutorial](https://kylemayes.github.io/vulkana
 - A depth buffer
 - OBJ model loading
 - Mipmaps
+- Multisample antialiasing (MSAA)
 
-The code is being heavily commented as I go through the tutorial, so it can be useful as an implementation reference.
+The code is being heavily commented as I go through the
+tutorial, so it can be useful as a learning reference.
 
 ## [CHIP-8](https://github.com/Epsylene/CHIP-8)
 ![CHIP-8](/assets/images/chip8.png)
