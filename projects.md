@@ -57,6 +57,7 @@ Implementation of the [Rust Vulkan tutorial](https://kylemayes.github.io/vulkana
 - OBJ model loading
 - Mipmaps
 - Multisample antialiasing (MSAA)
+- Push constants
 
 The code is being heavily commented as I go through the
 tutorial, so it can be useful as a learning reference.
