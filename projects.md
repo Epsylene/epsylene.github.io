@@ -58,6 +58,7 @@ Implementation of the [Rust Vulkan tutorial](https://kylemayes.github.io/vulkana
 - Mipmaps
 - Multisample antialiasing (MSAA)
 - Push constants
+- Primary and secondary command buffers
 
 The code is being heavily commented as I go through the
 tutorial, so it can be useful as a learning reference.
