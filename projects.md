@@ -63,17 +63,8 @@ Implementation of the [Rust Vulkan tutorial](https://kylemayes.github.io/vulkana
 The code is being heavily commented as I go through the
 tutorial, so it can be useful as a learning reference.
 
-## [CHIP-8](https://github.com/Epsylene/CHIP-8)
-![CHIP-8](/assets/images/chip8.png)
-
-An implementation of Austin Morlan's [CHIP-8 emulator](https://austinmorlan.com/posts/chip8_emulator/) in C++, using SDL2 for input and rendering. 
-
-It runs the fetch-decode-execute cycle of the virtual CPU,
-using a function pointer table to get each opcode method, and
-displaying the result on a (scaled) 64x32 screen.
-
-## [AxolotlOS](https://github.com/Epsylene/AxolotlOS)
-![AxolotlOS](/assets/images/axolotlos.png)
+## [axolotl-os](https://github.com/Epsylene/AxolotlOS)
+![axolotl-os](/assets/images/axolotlos.png)
 
 A (very early-stage) 64-bit OS, for fun.
 
@@ -84,6 +75,15 @@ Comprised for now almost exclusively of a bootloader written in x86-64 assembly,
 - Sets up identity paging
 - Elevates from protected mode to long mode
 - Calls the main() function in the kernel
+
+## [CHIP-8](https://github.com/Epsylene/CHIP-8)
+![CHIP-8](/assets/images/chip8.png)
+
+An implementation of Austin Morlan's [CHIP-8 emulator](https://austinmorlan.com/posts/chip8_emulator/) in C++, using SDL2 for input and rendering. 
+
+It runs the fetch-decode-execute cycle of the virtual CPU,
+using a function pointer table to get each opcode method, and
+displaying the result on a (scaled) 64x32 screen.
 
 ## [trout](https://github.com/Epsylene/trout)
 <!-- ![trout](/assets/images/trout.png) -->
