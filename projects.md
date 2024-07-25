@@ -60,20 +60,29 @@ Implementation of the [Rust Vulkan tutorial](https://kylemayes.github.io/vulkana
 - Push constants
 - Primary and secondary command buffers
 
-The code is being heavily commented as I go through the
-tutorial, so it can be useful as a learning reference.
+The code is being heavily commented as I go through the tutorial, so it can be useful as a learning reference.
 
 ## [CHIP-8](https://github.com/Epsylene/CHIP-8)
 ![CHIP-8](/assets/images/chip8.png)
 
 An implementation of Austin Morlan's [CHIP-8 emulator](https://austinmorlan.com/posts/chip8_emulator/) in C++, using SDL2 for input and rendering. 
 
-It runs the fetch-decode-execute cycle of the virtual CPU,
-using a function pointer table to get each opcode method, and
-displaying the result on a (scaled) 64x32 screen.
+It runs the fetch-decode-execute cycle of the virtual CPU, using a function pointer table to get each opcode method, and displaying the result on a (scaled) 64x32 screen.
 
-## [AxolotlOS](https://github.com/Epsylene/AxolotlOS)
-![AxolotlOS](/assets/images/axolotlos.png)
+## [nessie](https://github.com/Epsylene/nessie)
+![nessie](/assets/images/nessie.png)
+
+NES emulator in Rust, based on the tutorial at [https://bugzmanov.github.io/nes_ebook/](https://bugzmanov.github.io/nes_ebook/). For now, it only implements the CPU, with:
+
+- Memory map and registers
+- Status flags
+- Full 6502 instruction set
+- Addressing modes
+
+Programs are loaded from an array of bytes and then run with a callback to a function on each CPU cycle; this is used for rendering to a window with SDL2.
+
+## [axolotl-os](https://github.com/Epsylene/axolotl-os)
+![axolotl-os](/assets/images/axolotlos.png)
 
 A (very early-stage) 64-bit OS, for fun.
 
@@ -83,19 +92,17 @@ Comprised for now almost exclusively of a bootloader written in x86-64 assembly,
 - Elevates from real mode to protected mode
 - Sets up identity paging
 - Elevates from protected mode to long mode
-- Calls the main() function in the kernel
+- Calls the _start() function in the kernel
 
 ## [trout](https://github.com/Epsylene/trout)
 <!-- ![trout](/assets/images/trout.png) -->
 
-Interpreter for a simple dynamically-typed programming
-language, from the book [*Crafting
-Interpreters*](https://craftinginterpreters.com/) by Robert
-Nystrom, implemented in Rust. The program consists of three main parts:
+Interpreter for a simple dynamically-typed programming language, from the book [*Crafting Interpreters*](https://craftinginterpreters.com/) by Robert Nystrom, implemented in Rust. The program consists of four main components:
 
 1. A scanner that reads the source code, either from a file or a REPL, and produces a sequence of tokens.
 2. A parser that produces an abstract sintax tree from the sequence of tokens.
-3. An interpreter that traverses the AST and executes the code.
+3. A resolver that performs static analysis on the AST, checking for undeclared variables and other errors.
+4. An interpreter that traverses the AST and executes the code.
 
 The language is expression-based, with dynamic typing, lexical
 scoping, local functions, closures and some built-in functions.
