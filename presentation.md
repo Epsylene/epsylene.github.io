@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title: Presentation
-date: 2024-04-22 19:18 +0200
+permalink: /presentation/
 ---
 
 {% include presentation.md %}
