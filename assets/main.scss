@@ -67,6 +67,20 @@ $on-laptop:        900px;
   }
 }
 
+/** 
+  * Markdown TOC 
+  */
+#markdown-toc ul {
+  margin-left: 1em;
+  list-style: disc;
+}
+
+#markdown-toc {
+  padding-left: 1em;
+  list-style: decimal;
+  // display: inline-block;
+}
+
 /**
  * Reset some basic elements
  */
