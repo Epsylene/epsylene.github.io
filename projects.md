@@ -55,11 +55,11 @@ tutorial, so it can be useful as a learning reference.
 ### [minigl](https://github.com/Epsylene/minigl)
 ![minigl](/assets/images/minigl.png){:width="70%"}
 
-OpenGL library to provide common functionality for my 3D school projects. There are 3 parts:
+OpenGL library to provide common functionality for my graphics programming projects. The library can be divided in three main parts:
 
-* A C++ wrapper over the OpenGL API, to provide abstractions and a more suitable interface for my needs;
-* An application framework, to handle window creation, events, input, etc.;
-* Utility functions, to load shaders, models, do math, etc.
+* A (varyingly) thin wrapper over the core OpenGL API to provide a more modern and C++-like interface. This comprises abstractions over render commands, buffer objects, etc.
+* An application class that uses GLFW to create a window and manage the OpenGL context, inputs and render loop.
+* Utility classes for mesh loading, colors or math wrapping over GLM.
 
 ### [nessie](https://github.com/Epsylene/nessie)
 ![nessie](/assets/images/nessie.png)
@@ -84,16 +84,16 @@ Comprised for now almost exclusively of a bootloader written in x86-64 assembly,
 - Elevates from real mode to protected mode
 - Sets up identity paging
 - Elevates from protected mode to long mode
-- Calls the _start() function in the kernel
+- Calls the `_start()` function in the kernel
 
-### [trout](https://github.com/Epsylene/trout)
-<!-- ![trout](/assets/images/trout.png) -->
+### [trout-treewalk](https://github.com/Epsylene/trout/tree/master/treewalk)
+![trout](/assets/images/trout.png)
 
-Interpreter for a simple dynamically-typed programming language, from the book [*Crafting Interpreters*](https://craftinginterpreters.com/) by Robert Nystrom, implemented in Rust. The program consists of four main components:
+Treewalk interpreter for a simple dynamically-typed programming language, from the first part of the book [*Crafting Interpreters*](https://craftinginterpreters.com/) by Robert Nystrom, implemented in Rust with some changes along the way. The program consists of four main parts:
 
 1. A scanner that reads the source code, either from a file or a REPL, and produces a sequence of tokens.
 2. A parser that produces an abstract sintax tree from the sequence of tokens.
-3. A resolver that performs static analysis on the AST, checking for undeclared variables and other errors.
+3. A resolver that performs static analysis on the AST.
 4. An interpreter that traverses the AST and executes the code.
 
 The language is expression-based, with dynamic typing, lexical
